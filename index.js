@@ -31,5 +31,6 @@ function totalRevenue(drivers) {
     return agg + el.revenue
   }
   return drivers.reduce(reduceRevenue, 0)
-  //return driversCopy.reduce((total, driver) => total + driver.revenue)
+  
+  //return drivers.reduce((total, driver) => total + driver.revenue)
 }
