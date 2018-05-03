@@ -28,7 +28,7 @@ function driversByName(drivers) {
 
 function totalRevenue(drivers) {
   const reduceRevenue = function (agg, el, i, arr) {
-    agg + el.revenue
+    return agg + el.revenue
   }
   return drivers.reduce(reduceRevenue, 0)
   //return driversCopy.reduce((total, driver) => total + driver.revenue)
